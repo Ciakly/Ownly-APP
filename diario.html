@@ -51,8 +51,13 @@
     letter-spacing: 0.03em;
   }
 
-  .nav-right { display: flex; align-items: center; gap: 8px; }
-
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centra i pulsanti */
+  gap: 16px; /* più spazio tra i pulsanti */
+  flex: 1; /* occupa tutto lo spazio disponibile */
+}
   .tab-btn {
     background: none;
     border: none;
@@ -464,7 +469,7 @@
 <body>
 
 <nav>
-  <div class="logo">Diario</div>
+  <div class="logo">Ownly</div>
   <div class="nav-right">
     <button class="tab-btn active" onclick="showView('write')">Scrivi</button>
     <button class="tab-btn" onclick="showView('archive')">Archivio</button>
